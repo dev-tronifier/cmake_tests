@@ -8,7 +8,10 @@ add_subdirectory(module1)
 add_subdirectory(module2)
 add_subdirectory(module3)
 
-add_library(proj_name SHARED src/proj_name.c)
+add_library(proj_name SHARED
+	module1/src/file00.c module1/src/file01.c
+	module2/src/file00.c module2/src/file01.c
+	module3/src/file00.c module3/src/file01.c)
 
 set_target_properties(proj_name PROPERTIES
                 VERSION ${PROJECT_VERSION}

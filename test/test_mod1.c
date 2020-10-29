@@ -9,8 +9,11 @@
  * compilation terminated.
  */
 
-#include <proj_name/module3.h>
+#include <proj_name/module1.h>
+#include <stdio.h>
 
 int main(){
+	printf("%s\n%s\n", print_A(), print_B());
+
 	return 0;
 }
